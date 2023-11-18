@@ -17,7 +17,8 @@ $(call recurse,world,doc src config contrib,all)
 
 # build src/ before contrib/
 world-contrib-recurse: world-src-recurse
-
+# build src/ before contrib/
+world-contrib-recurse: world-src-recurse
 $(call recurse,world-bin,src config contrib,all)
 
 # build src/ before contrib/
